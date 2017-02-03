@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Exam</title>
+  </head>
+
+  <body>
+
+    <a href="/quotes/logout">Logout</a>
+    <a href="/quotes">Dashboard</a>
+
+    <h1>Posted by {{person.name}}!</h1>
+    <p>Count: {{counting}}</p>
+
+
+    {% for quote in quotes %}
+      <p>{{quote.author}}: {{quote.quote}}</p>
+
+    {% endfor %}
+
+
+  </body>
+</html>
